@@ -1,0 +1,14 @@
+@charset "UTF=8";
+
+* {
+  margin: 0px;
+}  
+
+ @font-face {
+  font-family: Soda;
+  src: url(fontes/Coffee-Soda-104726997/Coffee\ Soda.otf) format(opentype);
+ } 
+
+h1 {
+  font-family: 'Soda';
+}
