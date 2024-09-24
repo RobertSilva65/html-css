@@ -74,6 +74,12 @@ section {
 
 }
 
+section > p {
+
+    padding-bottom: 2em;
+
+}
+
 section.brn {
 
   font-size: 25px;
@@ -86,6 +92,7 @@ section#planoflor {
     background: black url(imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
     margin: 0px -51px;
+    box-shadow: inset 6px 6px 13px 0px #0000008a;
 }
 
 section#planoflor > p {
