@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens/fundo-madeira.jpg);
+}
+
+div#iphone {
+
+    position: relative;
+    background-image: url(imagens/frame-iphone.png);
+    width: 308px;
+    height: 618px;
+    margin: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: 10em;
+    justify-content: center;
+
+}
+
+
+div#iphone > iframe {
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 265px;
+  height: 535px;
+
+}
