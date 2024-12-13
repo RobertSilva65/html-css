@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+/* Todas demais mídias*/
+
+
+/*Typical Device Breakpoints
+
+Pequenas telas: até 600 px
+Celular: de 600 px até 768px
+Tablet:  769px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+
+*/
+
 * {
 
     padding: 0px;
@@ -7,3 +20,47 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
+@media screen and (min-width: 780px) and (max-width: 1100px) {
+
+    section#login {
+
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+
+    }
+
+    div#imagem > img {
+
+        display: inline;
+        margin: auto;
+        width: 25vw;
+        min-width: 270px;
+        height: 400px;
+        padding-bottom: 10px;
+        margin-left: 50px; 
+        transition: 0.1s;
+        border-radius:  20px 0px 0px 20px;
+    
+    }
+    
+    div#formulario {
+    
+        display: flex;
+        flex-direction: column;
+        width: 55vw;
+        height: 370px;
+        min-height: 365px;
+        padding-bottom: 10px;
+        transition: 0.1s;
+        border-radius: 0px 20px 20px 0px;
+        text-align: center;
+        background-color: white;
+    
+    }
+
+
+    
+}
+
