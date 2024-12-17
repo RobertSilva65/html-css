@@ -23,6 +23,12 @@ Grandes telas: acima de 1200px
 
 @media screen and (min-width: 780px) and (max-width: 1100px) {
 
+    body {
+
+        background-image: linear-gradient(to top, #25d8cf, rgb(209, 49, 214))
+
+    }
+
     section#login{
 
         display: flex;
@@ -58,13 +64,19 @@ Grandes telas: acima de 1200px
 
 @media screen and (min-width: 1100px) {
 
+    body {
+
+        background-image: linear-gradient(to top, #25d8cf, rgb(209, 49, 214))
+
+    }
+    
     section#login{
 
         display: flex;
         flex-direction: row;
         position: fixed;
         position: relative;
-        margin-left: 250px;
+        margin-left: 450px;
 
     }
 
