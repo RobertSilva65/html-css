@@ -91,6 +91,12 @@ div#formulario > form > p > input {
 
 }
 
+div#formulario > form > p > input:focus-within {
+
+    background-color: aliceblue;
+
+}
+
 div#formulario > form > p#enviar > input {
 
     display: block;
