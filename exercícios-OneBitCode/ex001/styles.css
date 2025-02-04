@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*  seletor :nth-child()  */
+
+li:nth-child(2) {
+
+    color: red;
+
+}
+
+li:nth-child(even) {
+
+    color: blue;
+
+}
+
+li:hover {
+
+    background-color: lightgray;
+    transition: 0.3s;
+
+}
+
+/*  pseudo-elementos -> ::before ::after */
+li::before {
+
+    content: "(antes)";
+
+}
+
+li::after {
+
+  content: "(depois)";
+}
+
+li:first-child {
+
+  color: red;
+
+}
+
+li:last-child {
+
+  color: purple;
+
+}
+
+li:not(:first-child) {
+
+  color: red;
+
+}
