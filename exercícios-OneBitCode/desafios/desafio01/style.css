@@ -14,13 +14,28 @@ header div#item1-header {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    
+    margin: 25px;
+}
+
+header div#item1-header > nav {
+
+    display: flex;
+    gap: 30px;
+
+}
+
+header div#item1-header > nav > a {
+
+    color: aquamarine;
+    text-decoration: none;
+
 }
 
 main {
 
   display: grid;
-  grid-template-columns: 20vw 40vw 40vw;
+  justify-content: center;
+  grid-template-columns: 200px 400px 400px;
   grid-template-rows: 200px;
   gap: 25px;
 
@@ -33,10 +48,36 @@ main section#categ {
 
 }
 
+main section#categ > ul {
+
+    margin: 0px;
+
+}
+
+main section#categ > ul > li > p {
+
+    color: aquamarine;
+
+}
+
 div#intro {
 
     grid-column: 2 / 4;
     grid-row: 1;
+    
+}
+
+.link {
+
+  color: aquamarine;
+  text-decoration: none;
+  
+}
+
+.news {
+
+    width: 360px;
+    border-radius: 10px;
 
 }
 
@@ -44,6 +85,14 @@ aside#news1 {
 
     grid-column: 2 / 4;
     grid-row: 2;
+    margin-top: -100px;
+
+}
+
+aside#news1 > img {
+
+    width: 730px;
+    border-radius: 10px;
 
 }
 

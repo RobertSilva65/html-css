@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+
+  background-color: #2c2c2d;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+}
+
+.grid-container {
+
+  margin: 0 auto;
+  height: 36rem;
+  width: 64rem;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 6rem 1fr 1fr 1fr;
+  grid-template-areas: 
+  "cabecalho cabecalho cabecalho cabecalho"
+  "sidebar conteudo conteudo conteudo"
+  "sidebar conteudo conteudo conteudo"
+  "rodape rodape rodape rodape";
+}
+
+.item {
+
+  border-radius: .25rem;
+  padding: 1rem;
+
+}
+
+.header {
+
+  background-color: #af4c4c;
+  grid-area: cabecalho;
+
+}
+
+.sidebar {
+
+  background-color: #4A66C3;
+  grid-area: sidebar;
+
+}
+
+.content {
+
+  background-color: #fff643;
+  grid-area: conteudo;
+
+}
+
+.footer {
+
+  background-color: #4f9849;
+  grid-area: rodape;
+
+}
