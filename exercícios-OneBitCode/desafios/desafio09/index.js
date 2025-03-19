@@ -31,7 +31,9 @@ while (true) {
 
       alert("Voce escolheu o jogo Mortal Kombat")
       break
-
+    default:
+      alert("erro")
+      break
   }
 
   if (menu === "5") {
