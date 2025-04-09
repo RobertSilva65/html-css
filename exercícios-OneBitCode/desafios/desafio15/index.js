@@ -1,56 +1,78 @@
-const cadastroAssis = prompt(
+const imoveis = []
+const confirma = ""
+let opcao = ""
 
-  "Expert Imóveis" +
-  "\n\nBem vindo ao nosso site de Imóveis" +
-  "Deseja entrar no site? S/N"
+do {
 
-)
-let lojaAssis = ""
-let contador = parseFloat(0)
-let storage = {}
+  opcao = prompt(
 
-while(cadastroAssis === "S") {
+    "Bem-Vindo ao Cadastro de Imóveis." +
+    "\nTotal de imóveis: " + imoveis.length +
+    "\n\nEscolha uma Opção:" +
+    "\n1. Novo Imóvel" +
+    "\n2. Listar Imóveis" +
+    "\n3. Sair"
 
-  lojaAssis = prompt(
-
-    "Expert Imóveis" +
-    "\n\nBem vindo!" +
-    "\nImóveis cadastrados: " + contador +
-    "\n|1|Cadastrar Imóvel" +
-    "\n|2|Imóveis Salvos" +
-    "\n|3|Sair"
-  
   )
-  if(lojaAssis === "1") {
 
-    storage.name = prompt("Nome de Proprietário?")
-    contador++
-    storage.bed = prompt("Quantidade de Quartos?")
-    storage.bath = prompt("Quantidade de banheiros?")
-    storage.room = prompt("Possui Garagem? S/N")
+  switch(opcao) {
 
-  }else if(lojaAssis === "2") {
+    case "1":
 
-    alert(
+      const imovel = {}
 
-      "Informações dos Imóveis:" + 
-      "\n\nNome: " + JSON.stringify(storage.name, null, 2) +
-      "\n\nQuantidade de Quartos: " + JSON.stringify(storage.bed, null, 2) +
-      "\n\nQuantidade de banheiros: " + JSON.stringify(storage.bath, null, 2) +
-      "\n\nPossui garagem: " + JSON.stringify(storage.room, null, 2)
+      imovel.owner = prompt("Informe o nome do Proprietário do Imóvel:")
+      imovel.room = parseFloat(prompt("Quantos quartos possui o Imóvel?"))
+      imovel.bath = parseFloat(prompt("Quantos banheiros possui o imóvel?"))
+      imovel.garage = prompt("O imóvel possui Garagem?")
 
-    );
+      const confirma = confirm(
 
-  }else if (lojaAssis === "3") {
-    
-    alert("Tchau até a Próxima")
-    break
+        "Salvar este Imóvel" +
+        "\nProprietário: " + imovel.owner +
+        "\nQuartos: " + imovel.room +
+        "\nBanheiros: " + imovel.bath +
+        "\nPossui Garagem? " + imovel.garage
 
-  }else {
+      )
 
-    alert("Opção incorreta")
+      if(confirma) {
+
+        imoveis.push(imovel)
+        alert("Imóvel cadastrado com sucesso")
+
+      } else {
+
+        alert("Voltando a tela inicial")
+        break
+
+      }
+      break
+
+    case "2":
+
+      for (let i = 0; i < imoveis.length; i++) {
+
+        alert(
+          "Imóvel " + (i + 1) +
+          "\nProprietário: " + imoveis[i].owner +
+          "\nQuartos: " + imoveis[i].room +
+          "\nBanheiros: " + imoveis[i].bath +
+          "\nPossui Garagem? " + imoveis[i].garage
+        )
+      }
+      break
+
+    case "3":
+
+      alert("Saindo")
+      break
+
+    default:
+
+      alert("Opção inválida")
+      break
 
   }
-  
-  
-}
+
+} while(opcao !== "3")
