@@ -7,7 +7,7 @@ function calcularMedia(a, b) {
 
 const resultado = calcularMedia(7, 2)
 
-console.log(resultado)
+//console.log(resultado)
 
 function criarProduto(nome, preco){
 
@@ -24,7 +24,7 @@ function criarProduto(nome, preco){
 
 const notebook = criarProduto("Notebook intel core i5 16GB", 2500)
 
-console.log(notebook)
+//console.log(notebook)
 
 function areaRetangular(base, altura) {
 
@@ -32,9 +32,36 @@ function areaRetangular(base, altura) {
 
 }
 
-console.log(areaRetangular(3,5))
+//console.log(areaRetangular(3,5))
 
 function areaQuadrada(lado){
 
+  return lado * lado
   
 }
+
+//console.log(areaQuadrada(9))
+
+function ola() {
+
+  let texto = ". . ."
+  return texto
+  
+}
+
+//console.log(ola())
+
+function maioridade(idade){
+
+  if (idade >= 18) {
+
+    return "Maior de Idade"
+
+  }else {
+
+    return "Voce é menor de idade"
+
+  }
+}
+
+console.log(maioridade(19))
