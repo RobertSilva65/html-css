@@ -78,3 +78,13 @@ const racas = personagens.reduce(function(valorAcumulado, personagem) {
 }, {})
 
 console.log(racas)
+
+//Sort
+
+personagens.sort(function(a, b) {
+
+  return a.nivel - b.nivel
+
+})
+
+console.log(personagens)
