@@ -10,29 +10,120 @@
 body{
 
   display: flex;
-  background-color: rgb(168, 168, 168);
+  background-image: url(imagens/planoDeFundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
-  height: 100vh;
+  min-height: 100vh; 
+  padding: 40px 0; 
 
 }
 
 div.escalation {
 
   display: flex;
+  background-image: url(imagens/planoDeFundoAzul.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   width: 500px;
-  height: 500px;
+  min-height: 670px;  
+  padding: 30px 0;
   flex-flow: column nowrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   background-color: white;
   border-radius: 10px;
 
 }
 
-div.escalation > h1 {
+
+
+h1 {
 
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
+  color: white;
+  text-shadow: 3px 3px black;
+  margin-bottom: 20px;
+
+}
+
+div#team {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(231, 231, 231);
+  width: 280px;
+  height: 200px;
+  border-radius: 50px;
+
+}
+
+ul{
+
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  
+}
+
+ul > li#namePerson {
+
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul > li#positionPerson {
+
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+ul > li#numberPerson {
+
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+section#escalation-list {
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+
+}
+
+
+h1#playerList {
+
+  margin-bottom: 20px;
+}
+
+.playerStyle {
+
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  background-color: rgb(44, 132, 247);
+  width: 250px;
+  height: 160px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+
 }

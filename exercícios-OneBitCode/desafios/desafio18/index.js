@@ -21,6 +21,7 @@ function addPerson() {
 
     const escalationSection = document.getElementById('escalation-list')
     const playerList = document.createElement('p')
+    playerList.classList.add("playerStyle");
     playerList.innerHTML = "<br><br>Nome: " + nameSection + 
     "<br><br>Posição: " + positionSection +
     "<br><br>Número da Camisa: " + numberSection
